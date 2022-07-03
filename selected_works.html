@@ -34,6 +34,50 @@
 			font-family: 'Poppins', sans-serif;
 			text-align:center;
 			}
+		    	
+		    	p{
+					color: #FFFFFF;
+					font-size:14px;
+				}
+				
+				.links {
+						
+						font-size:12px;
+						letter-spacing: 0px;
+						user-select: none;
+						color:#727272;
+					}
+					
+				a{
+						text-decoration:none;
+				}
+				
+				.links:hover{
+						color:#FF8C5A;
+				}
+				
+				.underline-animation {
+				  display: inline-block;
+				  position: relative;
+				}
+
+				.underline-animation:after {
+				  content: '';
+				  position: absolute;
+				  width: 100%;
+				  transform: scaleX(0);
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #FF8C5A;
+				  transform-origin: bottom right;
+				  transition: transform 0.25s ease-out;
+				}
+
+				.underline-animation:hover:after {
+				  transform: scaleX(1);
+				  transform-origin: bottom left;
+				}
 			
 			/* Extra small devices (phones, 600px and down) */
 				@media only screen and (max-width: 600px) {
@@ -49,6 +93,7 @@
 
 <body>
 <br>
+	<p> Here are some of my assorted works, enjoy!</p>
 	<br>
 
   <center>
@@ -58,8 +103,11 @@
    </center>
 	
 	<br>
-	<br>
-  
+   <p>&#169; Rahil Blade 2022 <br>
+    <a class="links underline-animation" href="https://rahilhstatic.github.io/">home.html</a> 	&nbsp; / &nbsp;<a class="links underline-animation" href="#">resume.pdf </a> 	&nbsp;/ &nbsp;<a class="links underline-animation" href="#">contact.html </a>
+	 </p>
+   
+   <br>
 
 
 </body>
