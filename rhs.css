@@ -1,0 +1,210 @@
+
+              
+				body {
+					background: #FFF1F1;
+					user-select:none;
+					font-family: 'Josefin Sans', sans-serif;
+					opacity: 0;
+					transition: opacity 3s;
+				}
+				
+				
+			main::before {
+			animation: grain 8s steps(10) infinite;
+			background-image: url('noise.png');
+			content: '';
+			height: 300%;
+			left: -50%;
+			opacity: 0.35;
+			position: fixed;
+			top: -100%;
+			width: 300%;
+			}
+				
+			@keyframes grain {
+			  0%, 100% { transform:translate(0, 0); }
+			  10% { transform:translate(-5%, -10%); }
+			  20% { transform:translate(-15%, 5%); }
+			  30% { transform:translate(7%, -25%); }
+			  40% { transform:translate(-5%, 25%); }
+			  50% { transform:translate(-15%, 10%); }
+			  60% { transform:translate(15%, 0%); }
+			  70% { transform:translate(0%, 15%); }
+			  80% { transform:translate(3%, 35%); }
+			  90% { transform:translate(-10%, 10%); }
+			}
+				
+		
+				
+				.contain { 
+						margin:0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width:50%;
+						-ms-transform: translate(-50%, -50%);
+						transform: translate(-50%, -50%);
+						text-align:center;
+						align-items:center;
+						}
+						
+				/* Extra small devices (phones, 600px and down) */
+				@media only screen and (max-width: 600px) {
+				
+				.contain{ 
+						width: 80%;
+						}
+				}
+
+				/* Small devices (portrait tablets and large phones, 600px and up) */
+				@media only screen and (min-width: 600px) {
+				
+				.contain{ 
+						width: 70%;
+						}
+				
+				}
+
+				/* Medium devices (landscape tablets, 768px and up) */
+				@media only screen and (min-width: 768px) {
+				
+				.contain{ 
+						width: 60%;
+						}
+				
+				}
+
+				/* Large devices (laptops/desktops, 992px and up) */
+				@media only screen and (min-width: 992px) {
+				
+				.contain{ 
+						width: 55%;
+						}
+				
+				}
+
+				/* Extra large devices (large laptops and desktops, 1200px and up) */
+				@media only screen and (min-width: 1200px) {
+				
+				.contain{ 
+						width: 45%;
+						}
+				
+				}
+				
+				.hover-underline-animation {
+				  display: inline-block;
+				  position: relative;
+				  color: #007675;
+				}
+
+				.hover-underline-animation:after {
+				  content: '';
+				  position: absolute;
+				  width: 100%;
+				  transform: scaleX(0);
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #007675;
+				  transform-origin: bottom right;
+				  transition: transform 0.25s ease-out;
+				}
+
+				.hover-underline-animation:hover:after {
+				  transform: scaleX(1);
+				  transform-origin: bottom left;
+				}
+				
+				
+
+			
+						
+				img:hover {
+					-moz-box-shadow: 0px 0px 5px #999;
+					-webkit-box-shadow: 0px 0px 5px #999;
+					box-shadow: 0px 0px 5px #999;
+				}
+				
+				.links {
+						
+						font-size:16px;
+						letter-spacing: 0px;
+						user-select: none;
+						color:#727272;
+					}
+					
+				a{
+						text-decoration:none;
+				}
+				
+				.links:hover{
+						color:#F06070;
+				}
+				
+				p{
+					color: #362C2C;
+					font-size:18px;
+				}
+				
+				
+				.highlight {
+						color:#007675;
+					}
+					
+				.underline-animation {
+				  display: inline-block;
+				  position: relative;
+				}
+
+				.underline-animation:after {
+				  content: '';
+				  position: absolute;
+				  width: 100%;
+				  transform: scaleX(0);
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #F06070;
+				  transform-origin: bottom right;
+				  transition: transform 0.25s ease-out;
+				}
+
+				.underline-animation:hover:after {
+				  transform: scaleX(1);
+				  transform-origin: bottom left;
+				}
+				
+				
+				
+				
+				
+				.wrapper {
+  height: 0vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 11ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22px;
+  color: #362C2C;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
