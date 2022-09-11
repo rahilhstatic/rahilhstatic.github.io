@@ -117,7 +117,9 @@
 				}
 				
 				
-
+				img{
+					z-index: 5;
+}
 			
 						
 				img:hover {
