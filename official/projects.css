@@ -125,9 +125,17 @@ html {
 				
 				p,ol{
 					color: #362C2C;
-					font-size:18px;
-					line-height:26px;
+					font-size:14px;
+					line-height:20px;
 				}
+
+				h1{
+					font-size:20px;
+}
+
+				h2{
+					font-size:18px;
+}
 				
 				
 				.highlight {
