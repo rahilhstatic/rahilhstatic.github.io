@@ -4,14 +4,14 @@
 			
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-          
+			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+		  
             <title>Rahil H. | WITWIR? </title>
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0">
 			<meta name = "Description" content ="Where In The World is Rahil, a series of posters showcasing Rahil's career growth."> 
 			<meta charset="UTF-8">
 			<meta name = "keywords" content = "Rahil Static, Rahil Hussain, Designer, Static, UI, UX, Rahil, Static, Hussain, Where in the world is Rahil ?">
-			<meta name = "author" content = "Rahil Static Hussain">
+			<meta name = "author" content = "Rahil Static H.">
 			 <!-- Chrome, Firefox OS and Opera --> 
 			<meta name="theme-color" content="#000000"> 
 			<!-- Windows Phone --> 
@@ -19,6 +19,7 @@
 			content="#000000"> 
 			<!-- iOS Safari --> 
 			<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+		  	<link rel="stylesheet" type="text/css" href="projects.css" />
 			 
 			<link rel="icon" type="image/png" href="https://rahilhstatic.github.io/favicon-32x32.png" sizes="32x32" />
 			<link rel="icon" type="image/png" href="https://rahilhstatic.github.io/favicon-16x16.png" sizes="16x16" />
@@ -41,9 +42,6 @@
 			  border-radius: 10px;
 			}
 			
-			main::before{
-			opacity: 0.2;
-			}
 		    
 		    body {
 					background-color: #000000;
@@ -54,26 +52,18 @@
 				}
 				
 		
-			
-			
-				@media screen 
-				 and (max-width: 428px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 90%;
-						height: auto;
-						}
-
-				}
-			
+		
 			p,ol{
 			color: #ffffff;
-			font-size:18px;
-			line-height:22px	
+			font-weight: 300;
 			}
+			
+			h1,h2,h3,h4,h5{
+			color: #ffffff;
+			font-weight: 500;
+			line-height:40px;
+			}
+		    
 			
 			hr.dashed {
 			  border-top: 3px solid #FFF;
@@ -89,6 +79,7 @@
 						letter-spacing: 0px;
 						user-select: none;
 						color:#00C9C8;
+						font-weight: 400;
 					}
 					
 				
@@ -118,60 +109,55 @@
 				  transform: scaleX(1);
 				  transform-origin: bottom left;
 				}
-				
-				
 			
-			@media screen 
-				 and (min-width: 429px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 80%;
-						height: auto;
-						}
+			  	
+			.scroll {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #E6F4F1;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	}
+	
+	.scroll::before {
+		content: '';
+		position: absolute;
+		top: 7.5px;
+		left: 9px;
+		width: 9px;
+		height: 9px;
+		border-left: 2px solid #E6F4F1;
+  	border-bottom: 2px solid #E6F4F1;
+		transform: rotate(-45deg);
+	}
 
-				}
-				
-				@media screen 
-				 and (min-width: 744px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 70%;
-						height: auto;
-						}
 
-				}
-				
-				@media screen 
-				 and (min-width: 1080px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 65%;
-						height: auto;
-						}
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
-				}
-				
-				@media screen 
-				 and (min-width: 1280px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 60%;
-						height: auto;
-						}
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
-				}
 			</style>
            
 </head>
@@ -182,13 +168,16 @@
 
 <img src="where/witwirposter.jpg"  width="100%" alt="Content Header For 'Where In The World Is Rahil ?'";>
 <br> 
+<h1 style="text-align:center";>
+  WITWIR ? Posters <p style="font-size:16px; font-weight:400;"> Personal Project (2022)</p>
+</h1>
+<center>
+<a href="#Start"><div class="scroll"></div></a>
+</center>
 <br>
-<p style="font-size:20px; text-align:center";>
-  WITWIR? Posters // Personal Project (2022)
-</p>
 <br>
 <br>
-<p> &rarr; Synopsis &larr; </p>
+<h2 id="Start"> &rarr; Synopsis &larr; </h2>
 <p>" Where In The World Is Rahil ? " are a set of posters designed to provide information about Rahil's career in a summarized, story-based format.</p> 
 <p>They were originally designed for <a href="https://www.linkedin.com/in/rahilhstatic" class="backlink backline-animation">Rahil's LinkedIn Page</a>, so chances are that the latest issues might show up a little late over here.</p>
 <p>If you wish to read these in another language you can check out the <a href="https://rahilhstatic.github.io/personal/witwirtranscript" class="backlink backline-animation">transcript version.</a></p>
