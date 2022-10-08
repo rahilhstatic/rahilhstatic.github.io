@@ -4,14 +4,14 @@
 			
 			<link rel="preconnect" href="https://fonts.googleapis.com">
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
           
             <title>Rahil H. | Jaimeen Fumakiya </title>
 			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0 ">
 			<meta name = "Description" content ="Rahil explains how he built Jaimeen's portfolio website using webflow."> 
 			<meta charset="UTF-8">
 			<meta name = "keywords" content = "Rahil, Hussain, Designer, Static, UI, UX, Jaimeen, Fumakiya">
-			<meta name = "author" content = "Rahil Static H.">
+			<meta name = "author" content = "Rahil Static ">
 			 <!-- Chrome, Firefox OS and Opera --> 
 			<meta name="theme-color" content="#000000"> 
 			<!-- Windows Phone --> 
@@ -19,7 +19,7 @@
 			content="#000000"> 
 			<!-- iOS Safari --> 
 			<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-			<link rel="stylesheet" type="text/css" href="https://rahilhstatic.github.io/rhs.css" />
+			<link rel="stylesheet" type="text/css" href="projects.css" />
 			 
 			<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 			<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -42,29 +42,20 @@
 			  border-radius: 10px;
 			}
 			
-			main::before{
-			opacity: 0.2;
-			}
 			body{
 			background-color: #0e2108;
 			}
 			
 			
-				@media screen 
-				 and (max-width: 428px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 90%;
-						height: auto;
-						}
-
-				}
-			
 			p,ol{
 			color: #EEF3E1;
+			font-weight: 300;
+			}
+		    
+		    	h1,h2,h3,h4,h5{
+			color: #EEF3E1;
+			font-weight: 500;
+			line-height:40px;
 			}
 			
 			.links {
@@ -73,6 +64,7 @@
 						letter-spacing: 0px;
 						user-select: none;
 						color:#FDE181;
+						font-weight: 400;
 					}
 					
 				a{
@@ -112,6 +104,7 @@
 						letter-spacing: 0px;
 						user-select: none;
 						color:#FFF1F1;
+						font-weight: 400;
 					}
 					
 				
@@ -141,59 +134,53 @@
 				  transform: scaleX(1);
 				  transform-origin: bottom left;
 				}
-				
-			
-			@media screen 
-				 and (min-width: 429px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 80%;
-						height: auto;
-						}
+				.scroll {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #EEF3E1;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	}
+	
+	.scroll::before {
+		content: '';
+		position: absolute;
+		top: 7.5px;
+		left: 9px;
+		width: 9px;
+		height: 9px;
+		border-left: 2px solid #EEF3E1;
+  	border-bottom: 2px solid #EEF3E1;
+		transform: rotate(-45deg);
+	}
 
-				}
-				
-				@media screen 
-				 and (min-width: 744px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 70%;
-						height: auto;
-						}
 
-				}
-				
-				@media screen 
-				 and (min-width: 1080px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 65%;
-						height: auto;
-						}
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
-				}
-				
-				@media screen 
-				 and (min-width: 1280px)
-				{ 
-				   .bcontain{ 
-						text-align:left;
-						margin-left:auto;
-						margin-right:auto;
-						width: 60%;
-						height: auto;
-						}
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
 
-				}
 			</style>
            
 </head>
@@ -204,13 +191,16 @@
 
 <img src="nc/jcover.png"  width="100%" alt="Jaimeen Fumakiya Portfolio website hero section on desktop and phone views";>
 <br> 
+<h1 style="text-align:center";>
+ Jaimeen Fumakiya <p style="font-size:16px; font-weight:400;"> Portfolio Website (2022)</p>
+</h1>
+<center>
+<a href="#Start"><div class="scroll"></div></a>
+</center>
 <br>
-<p style="font-size:20px; text-align:center";>
-  Jaimeen Fumakiya // Portfolio Website (2022)
-</p>
 <br>
 <br>
-<p> &rarr; Synopsis &larr; </p>
+<h2 id="Start"> &rarr; Synopsis &larr; </h2>
 <p> Jaimeen Fumakiya is a data scientist with a portfolio of various data related projects that are too many to display in a traditional resume. 
 Hence, a simple yet effective website to showcase his work was needed.</p> 
 <p>Due to Jaimeen's coding abilities, he had initially only asked me to design the website, while deployment would be handled by him.
@@ -221,7 +211,7 @@ However, tempted by curiosity and the chance to update my skill-set, I decided t
 <img src="nc/jaimeencover.jpg"  width="100%" alt="Desktop & Phone views for the hero section of Jaimeen's portfolio page." ;>
 <br> 
 <br>
-<p> &rarr; Thought Process &larr; </p>
+<h2> &rarr; Thought Process &larr; </h2>
 <p>Two words - "Concept Identity". 
 <br>I wanted to create something that would showcase Jaimeen's identity as a data scientist,
 this directed my selection for the font (Inconsolata) which would reflect that aesthetic along with using data terminologies such as "Data Set 001" to highlight the illustrations.
@@ -237,12 +227,12 @@ I wanted the animations to be quick, clean and distraction free, making sure tha
 
 <br> 
 <br>
-<p> &rarr; Challenges &larr; </p>
+<h2> &rarr; Challenges &larr; </h2>
 <p>This was my first Webflow project, everything about it initially was a challenge.
 I was learning a new program while trying to make sure that I didn't have to compromise my vision due to my lack of experience.
 </p>
 
-<p> &rarr; The Solution &larr; </p>
+<h2> &rarr; The Solution &larr; </h2>
 <p>"Practice & Patience" - the two solutions that countered my lack of knowledge with Webflow. With time, I soon became more comfortable with the program, and it got a lot more easier to realize the vision for the website.
 The deadline for the project was flexible to allow me enough breathing room to do the same.
 </p>
