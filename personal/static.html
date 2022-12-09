@@ -6,11 +6,16 @@
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=auto" rel="stylesheet">
 			
-          <title>Rahil Static</title>
+          <title>The Rahil Static Story </title>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta name = "Description" content ="No info available at the moment, check back in due time."> 
 			<meta charset="UTF-8">
-			<meta name = "keywords" content = "Rahil Static, Rahil Hussain, Rahil, Static, Hussain, Designer, UI, UX">
+		  	<meta property='og:image' content='https://rahilhstatic.github.io/staticstorythumb.jpg'/>
+		  	<meta property='og:url' content='https://rahilhstatic.github.io'/>
+		  	<meta property='og:image:width' content='1200' />
+			<meta property='og:image:height' content='630' />
+		  	<meta property="og:type" content='website'/>
+			<meta name = "keywords" content = "The Rahil Static Story, Rahil Static, Rahil Hussain, Rahil, Static, Story, Hussain, Designer, UI, UX">
 			<meta name = "author" content = "Rahil Static H.">
 			 <!-- Chrome, Firefox OS and Opera --> 
 			<meta name="theme-color" content="#000000"> 
@@ -19,7 +24,7 @@
 			content="#000000"> 
 			<!-- iOS Safari --> 
 			<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-			<link rel="stylesheet" type="text/css" href="https://rahilhstatic.github.io/rhs.css" />
+			<link rel="stylesheet" type="text/css" href="projects.css" />
 			 
 			<link rel="icon" type="image/png" href="https://rahilhstatic.github.io/favicon-32x32.png" sizes="32x32" />
 			<link rel="icon" type="image/png" href="https://rahilhstatic.github.io/favicon-16x16.png" sizes="16x16" />
@@ -42,9 +47,6 @@
 			  border-radius: 10px;
 			}
 			
-			main::before{
-			opacity: 0.2;
-			}
 			body{
 			background-color: #1D191A;
 			}
@@ -54,14 +56,40 @@
 			}
 			
 			
+				@media screen 
+				 and (max-width: 428px)
+				{ 
+				   .bcontain{ 
+						text-align:left;
+						margin-left:auto;
+						margin-right:auto;
+						width: 90%;
+						height: auto;
+						}
+
+				}
+			
+			p,ol,h1,h2,h3,h4{
+			color: #FAF8FF;
+			}
+			
+			p,ol{
+			font-weight: 300;
+			}
+			
+			h1,h2,h3,h4,h5{
+			font-weight: 500;
+			line-height:40px;
+			}
+			
 			
 			.links {
 						
 						font-size:16px;
 						letter-spacing: 0px;
 						user-select: none;
-						color:#FF856B;
 						font-weight: 400;
+						color:#FF856B;
 					}
 					
 				a{
@@ -95,27 +123,12 @@
 				  transform-origin: bottom left;
 				}
 				
-				p,h1,h2,h3{
-				color:#ffffff;
-				}
-				
-				h1{
-				font-weight:600;
-				}
-				
-				h2,h3{
-				font-weight:500;
-				}
-				
-				p{
-				font-weight:300;
-				}
-				
 				.backlink {
 						
 						font-size:16px;
 						letter-spacing: 0px;
 						user-select: none;
+						font-weight: 500;
 						color:#FFF1F1;
 					}
 					
@@ -148,18 +161,402 @@
 				}
 				
 			
-			</style>
-           
+			@media screen 
+				 and (min-width: 429px)
+				{ 
+				   .bcontain{ 
+						text-align:left;
+						margin-left:auto;
+						margin-right:auto;
+						width: 80%;
+						height: auto;
+						}
+
+				}
+				
+				@media screen 
+				 and (min-width: 744px)
+				{ 
+				   .bcontain{ 
+						text-align:left;
+						margin-left:auto;
+						margin-right:auto;
+						width: 70%;
+						height: auto;
+						}
+
+				}
+				
+				@media screen 
+				 and (min-width: 1080px)
+				{ 
+				   .bcontain{ 
+						text-align:left;
+						margin-left:auto;
+						margin-right:auto;
+						width: 65%;
+						height: auto;
+						}
+
+				}
+				
+				@media screen 
+				 and (min-width: 1280px)
+				{ 
+				   .bcontain{ 
+						text-align:left;
+						margin-left:auto;
+						margin-right:auto;
+						width: 60%;
+						height: auto;
+						}
+
+				}
+				
+.scroll {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #E6F4F1;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	}
+	
+	.scroll::before {
+		content: '';
+		position: absolute;
+		top: 7.5px;
+		left: 9px;
+		width: 9px;
+		height: 9px;
+		border-left: 2px solid #E6F4F1;
+  	border-bottom: 2px solid #E6F4F1;
+		transform: rotate(-45deg);
+	}
+
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.credbox {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  border: 4px solid white;
+  text-align:center
+}
+#upbtn {
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #1D191A;
+  color: white;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+#upbtn:hover {
+  background-color: #555;
+}
+</style>
 </head>
+
 
 <body onload="document.body.style.opacity='1'">
  <main>
-<div class="contain">
-<h1> You're Not Insignificant</h1>
-<h3>Rahil Static</h3>
-<p><a href="https://rahilcity.webflow.io/" class="links underline-animation"><i>Rahil City</i></a> opens for the first time in seven years on 9th December 2022 to welcome a new member whose story will be the focus of this space. All you can do is wait, but if the bond we share is strong enough, then we shall meet again.</p> 
+ 
+
+<button onclick="topFunction()" id="upbtn" title="Go to top">&uarr;</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("upbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+			
+			
+<div class="bcontain">
+<img src="staticstorypromo.png"  width="100%" alt="The Rahil Static Story Promotional Poster";>
 <br>
-<p><a href="https://rahilhstatic.github.io/selected_works.html" class="links underline-animation"> &larr; Be Patient, View My Other Works</a></p>
+<br>
+<h1 style="text-align:center";>
+  The Rahil Static Story <p style="font-size:16px; font-weight:400;"> Personal Project (2022)</p>
+</h1>
+<center>
+<a href="#Start"><div class="scroll"></div></a>
+</center>
+<br>
+<br id="Start">
+<p><a href="#preface" class="links underline-animation">Preface</a></p>
+<p><a href="#part1" class="links underline-animation">Part 1: The Protagonist</a></p>
+<p><a href="#part2" class="links underline-animation">Part 2: To Those Who Inspired...</a></p>
+<p><a href="#part3" class="links underline-animation">Part 3: Inadequacy & Finding Yourself</a></p>
+<p><a href="#part4" class="links underline-animation">Part 4: A Change In Perspective</a></p>
+<p><a href="#part5" class="links underline-animation">Part 5: Rahil Static</a></p>
+<p><a href="#credits" class="links underline-animation">Credits</a></p>
+<br>
+<hr class="dashed">
+<br>
+<h2 id="preface"> Preface </h2>
+<img src="where/preface.jpg"  width="100%" alt="Preface";>
+<br><br>
+<p> Born and raised in a city known for its fast-paced lifestyle, I have always felt static. 
+Between being stuck in the glory days of the past and feeling anxious about the future, the present becomes non-existent. 
+Writing this story down is my outlet to make peace with myself, close a chapter in my story that started back in college, and move on with a renewed perspective.
+
+<p>Somewhere, for someone, and in sometime, these words will be my contribution to keeping the light on. What does that exactly mean ?
+I'll tell you, but I will also leave it a bit ambiguous.</p>
+
+<p>Interpretation is an art, and over explaining something is robbing the artist (that's you, the reader) of that privilege. 
+All of this might mean nothing to some, but it is everything to me.</p>
+<p>So let's just talk; you can pick up the pieces as we go along.</p>
+
+<br>
+<br>
+
+<h2 id="part1"> Part 1: The Protagonist </h2>
+<img src="where/p1.jpg"  width="100%" alt="Part 1: The Protagonist" ;>
+<br><br>
+<p>The last time I was on stage was back in 2019.</p>
+<p>School, and even in college I found myself frequently on stage. 
+I was hosting events, entertaining the crowds, keeping them interested, and announcing the next act that would follow. 
+It all feels surreal in that moment, hundreds of people in attendance all listening to what you have to say, making you feel like the main character of some dreamy movie.</p>
+
+<p>It is the next day when reality hits, when you are back home with few people around you, your mind craves for the dopamine hit you got when you were on stage, it desperately wants to relive that moment again, and it does. Like a broken record, images of that time keep playing on loop, and it takes at least a week of normalcy to convince yourself that life isn't this dreamy movie you keep thinking it is. Even after all that, every now and then I would still crave the stage, for a multitude of reasons, one, because that platform makes you more confident, you make mistakes, fumble words, get nervous. Ultimately, the show needs to go on, so you keep moving on ahead. This act of not staying stuck with your mistakes and refusing to let those define your entire performance is exactly what I love about it.</p>
+
+<p>Two, (and maybe I hate to admit this) I wanted to be on stage for validation. Crowds chanting your name, their cheers justifying your performance, the thrill, the adrenaline rush, the post-event praise you get from peers and audience members. I lived for that. The stage always made me feel special, like a star, the protagonist.</p>
+
+
+<p>Soon college would end, then right after Covid happened and my connection with the stage was all gone. (With time, my perspective about it has also changed, but we will get to that later.)</p>
+
+<p>You start seeing your friends get jobs and earn money, which eventually forces you to follow suit without properly analyzing what YOU really want to do.</p>
+
+<p>Which raises the question “Are we all the most authentic versions of ourselves, or just mindless chasing machines ? Are the dreams we are trying to pursue, really our own or just something we accepted as ours ?”</p>
+
+<p>Clearly the answer lies in deep self-reflection. Your mind plays this game with you where it cherished certain past experiences and demands that you should chase after them, in my opinion that will lead to more emptiness. You see what worked previously might not work today, with time your preferences, feelings, thoughts change… because you change.</p>
+
+<p>As a graduate in information technology, I would have been incredibly dissatisfied if I had continued to pursue coding as a profession, which while it looked superficially fascinating, once I started working in that realm, it didn't really mean much. I didn't like it, and while it was paying well, it felt like I was compromising a part of myself in the process. You see, that's the issue, sometimes we make decisions based on the monetary value attached to them; we select our professions thinking that they will give us the most money when in reality, money is a tangible resource, and in this day and age, with the right idea, you can monetize anything. So why not do that with something you love ? If at that time I would have listened to my mind and carried on, just because a younger Rahil was excited about a profession he wasn't passionate about anymore, I would have fallen into a trap.</p>
+
+<p>When one door closes, pay close attention, God is always creating better opportunities for you; it is on us to stay attentive and not be so attached to what used to work. And really I could use this advice too, because even though these are my own words, sometimes I too falter in following them. (Because just like you, I am also a human, and I am not perfect either)</p>
+
+<p>Coding didn't exactly work out for me, at least not professionally. I still code from time to time, but only for my personal projects, like this website. So, all of that wasn't exactly a waste. I also met a lot of talented people and made a lot of friends in college. There also came a realization that there was one profession still out there, perfect for my artistic expression, filled with limitless possibilities, and one that I would enjoy doing on a day-to-day basis. I experimented for a while, then narrowed down on one…</p>
+
+<p>First quarter of 2021, I got into UI/UX designing.</p>
+
+
+<br>
+<br>
+
+<h2 id="part2"> Part 2: To Those Who Inspired </h2>
+<img src="where/p2.jpg"  width="100%" alt="Part 2: To Those Who Inspired" ;>
+<br><br>
+
+<p>You always need someone who sets off that initial spark in you; for me it was <a href="https://dribbble.com/dchen" target="_blank" class="links underline-animation" style="font-size:18px;"><i>Dave Chenell</i></a>. If you actually look at his work, it is drastically different from mine, because he isn't a UI/UX (User Interface/User Experience) designer. He defines himself as a computer artist with his work being mainly focused on illustrations and 3d motion, which he is absolutely phenomenal at. Currently, he is working on developing his own virtual reality game. The reason why Dave’s work stood out to me was because you can clearly tell that he has developed his own style, he is following his own artistic authenticity, which in turn conveyed to me that I could also make a living if I followed mine.</p>
+
+<p>From there I just started experimenting. I downloaded design software and made whatever my heart desired; this eventually (through a long process, which we will discuss later) led me to create a portfolio of personal projects which started a small freelancing gig. By God's grace, I finally found a new direction, a place where my artistic and professional ambitions could meet to create something that felt meaningful. While Dave ignited the initial spark, there were others who kept the flames ignited.</p>
+
+<p><a href="https://www.strekowski.com/" target="_blank" class="links underline-animation" style="font-size:18px;"><i>Tom Strekowski</i></a> - an extremely talented designer, who knows exactly how to convey a brand’s personality through the design. A pure artist, his own portfolio website is a mixture of poetic writing and incredible aesthetics. He has the ‘eye of a designer’, he knows through pure intuition what should go where and what doesn’t belong; pure artistic instinct, when you are this honest with yourself, your only competition is you.</p>
+
+<p>Switching gears, I also need to mention my good friend, Neel Sagar. Again, we have different professions, but Neel is someone who I consider to be a proficient front-end developer. Whenever, I need help regarding coding for my personal web-related projects, he is the guy who’s just a message away. He was also the first person who gave me constructive feedback on the website that you are currently viewing.</p>
+
+<p>If these three individuals (two of whom I have never met or seen) stumble upon these words, I want to sincerely and humbly say - Thank you, thank you for being yourself and inspiring me to find myself too.</p>
+
+<p>Thank you… for keeping the light on.</p>
+
+<br>
+<br>
+
+<h2 id="part3"> Part 3: Inadequacy & Finding Yourself </h2>
+<img src="where/p3.jpg"  width="100%" alt="Part 3: Inadequacy & Finding Yourself" ;>
+<br><br>
+
+<p>Getting inspired is a start; the real challenge comes when you get down to execution. They say consistency keeps you going, that’s true, but for me it was also inadequacy. Acknowledging that your work is currently not at the level it has the potential to reach has kept me going, and it has also created a ton of added pressure. It is a lot easier to say that I accomplished x or y, but to describe the process of getting there is very difficult. To say that a few people inspired me to find myself is simple and straightforward, but it didn’t really happen overnight.</p>
+
+<p>When I first got inspired by Dave’s work, my initial intention was to imitate his style, just so that I could analyze whether I possessed the skills of pursuing that profession. I soon realized however, that the whole process didn’t feel natural and that I was being unfair to myself. Dave has years of experience under his belt, meanwhile I was just starting out, it definitely took him a while to get a hang of things and that will hold true for me too. You can’t rush the learning curve and Dave’s work was drastically different from what I ended up doing anyways. But testing it out and seeing that I wasn’t skilled in that area only meant I was good at something else; so this whole journey of trial and error to see what works for you is important, even though it may be frustrating.</p>
+
+<p>What came after that wasn’t exactly easy either; my freelancing gig was fruitful, but I clearly needed a more organized system with a chance to work with other designers to get better at this thing. That’s when I started searching for a job while delivering a few small scale projects here and there. I got rejected a lot during my job search, and I was naive enough to let that get to me. I thought again that I was inadequate, talentless, and this time that feeling wasn’t helping me push further, this time around it was holding me down. It also didn’t help that almost all of my friends were already a year and a half into their respective jobs, while I had to go through that figuring out process. While that time is a bit blurry, one thing I knew for sure, I loved making designs, I had no doubt that even if I couldn’t get a job in this realm now, one day I would.</p>
+
+<p>I didn’t have to wait long. I got employed on 8th September 2021 by a startup and the environment was exactly what I needed to get better.</p>
+
+<p>You know, I wished during this time people would just say “Rahil, you are doing great, keep it up.” But the people around me almost always made it a point to emphasize (either implicitly or explicitly) that “Rahil, you could be doing better.” This is the worst thing to say to someone who is already trying his best; please realize that when the timing isn’t right, it simply isn’t right. We live in a world where comparison is so natural and we are so impatient for more money and more materialistic possessions that we would rather fast forward the time to get there, instead of cherishing the journey that would get us there. And I am asking something even deeper than that - “What exactly do we do when we get there ? Is attaining all that money the end goal of it all ?” cause if that was the case maybe I shouldn’t have left coding, I would be making more money even if I didn’t like that work, but personal satisfaction wouldn’t matter if money was the only priority right ?</p>
+
+<p>I think we all should come up with our own definition of success and leave behind the one set by social media, but to do that you need to understand yourself properly. I believe that you can only truly find yourself in a vacuum, surrounded and aware of only your genuine thoughts and feelings.</p>
+
+<p>Listen to that voice inside of you, but first make sure that the voice is actually yours.</p>
+
+<br>
+<br>
+
+<h2 id="part4"> Part 4: A Change In Perspective </h2>
+<img src="where/p4.jpg"  width="100%" alt="Part 4: A Change In Perspective" ;>
+<br><br>
+
+<p>The last time I was on stage was in 2019, but now the world is my stage.</p>
+
+<p>Through this new found artform of designing I continue to express myself and tell my story, in hopes that maybe one day these words will keep the light on for someone else.</p>
+
+<p>While my love for the stage will never go away, I am no longer seeking the validation that once I was so desperate for. I have come to realize the stage won't always be there; the people won't always sing your praises, but as long as you are happy with the person you see in the mirror, nothing else matters.</p>
+
+<p>I also thought about it all from a different perspective, when I was on stage; to me it always felt like I was the main character, the protagonist. But whether conscious about it or not, the audience were the real stars of each and every show; without them my presence on stage wasn’t justified, and the words I spoke into the microphone would only disappear into thin air, landing on no one’s ears. It is when the people fill the seats that the entire act is contextualized, then it makes sense, this temporary ‘event-to-event’ relationship with them really is a two-way street. I am supposed to make them feel like stars and they end up making me feel like I am one too.</p>
+
+<p>The same can be said for the creative minds who inspired me. I can sing their praises all day and in a sense make them feel special for inspiring me, but what about the fact that I also felt special due to their work ? That for once in my life I felt like I had something valuable to contribute; that I too had a talent that could be put on display. This is the purest form of self-validation, because it makes you look inward to reflect upon what you are really good at and finally realize that you are not insignificant, not because somebody else had to say that to you. But because now you yourself know.</p>
+
+<p>In this way the cycle continues, a generation of artists inspired me to find myself, that led me to create my own art that will one day, hopefully, God willing, inspire the next.</p>
+
+<p>I will play my role; you will play yours, and in turn we will keep the light on for everyone involved.</p>
+
+
+<br>
+<br>
+
+<h2 id="part5"> Part 5: Rahil Static </h2>
+<img src="where/closure2.jpg"  width="100%" alt="Part 5: Rahil Static" ;>
+
+
+<br><br>
+
+<p><i>"Don’t let either the past hold you back, or the future make you feel anxious.<br>
+Know your worth, believe in it.<br>
+Create self assurance to remove your doubts, a process to shed your skin.<br>
+Born anew, you can begin again."<br>- Rahil Static</i>
+</p>
+
+<p>This entire story has been playing in my mind for a long time, and the suffix ‘Static’ attached to my name is accurate. I have been unable to move on, stuck as the same college kid who was directionless about his career, who saw his friends get a job before him and had to deal with comparisons from both internal and external sources. I added a ton of pressure to my own self, created a conflict within me, and have since fought hard to resolve it. Writing all this history down is me making peace with myself; it is me acknowledging that everyone is on their own journey; that I am simply doing my best with the cards that I have been presented with.</p>
+
+<p>I added Static to my name to remind myself that there is no point in being stuck between the past and the future. I won’t grow in this space and will never realize my full potential. Rahil Static needs to exist so that Rahil Hussain can thrive. They both co-exist and drive each other. I am different from who I was yesterday, but even in this place I can’t stay stuck; there is a lot more to learn and a lot more to achieve in terms of both personal and professional goals. All of this doesn’t mean that I am in a constant state of dissatisfaction; on the contrary, I am happy with the man I see in the mirror; but I am also aware that I am not there yet. It is a delicate balance of feeling content and being at peace with where you are, but also energetic and excited about what’s next.</p>
+
+<p>I will leave you with this final message… a belief and a motive.</p>
+
+<p>I believe we should strive for greatness. Greatness that isn't defined by money, fame, and all other temporary, vanity-driven pursuits.</p>
+
+<p>The real greatness is making the best out of all the opportunities presented to us, it is about the quiet moments when nobody is watching, it is about having the courage to dream and sacrifice your personal pleasures for the same, it is about helping people find their true self.</p>
+
+<p>You see, my job isn't to inspire others to be like me; that would be foolish.</p>
+
+<p>My job is to create the blueprint that inspires people to be more like themselves so that they can achieve their own individual greatness.</p>
+
+<p>That is the Rahil Static Story.</p>
+
+<p>Realized.</p>
+
+<br><br>
+
+<div class="credbox" id="credits"><svg width="80" height="80" viewBox="0 0 143 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M112.272 86.0127C113.303 86.2384 114.376 86.1977 115.388 85.8946C116.399 85.5915 117.317 85.0358 118.055 84.28C118.793 83.5241 119.326 82.5929 119.604 81.5741C119.883 80.5553 119.897 79.4824 119.647 78.4564C120.7 78.616 121.777 78.5094 122.779 78.1463C123.78 77.7832 124.675 77.1752 125.382 76.3776C126.088 75.58 126.584 74.6182 126.823 73.58C127.063 72.5418 127.038 71.4601 126.753 70.4337C128.271 70.6475 129.816 70.3246 131.122 69.5209C132.428 68.7171 133.412 67.4828 133.905 66.0309C134.398 64.579 134.368 63.0007 133.822 61.5681C133.275 60.1356 132.246 58.9387 130.911 58.184C131.709 57.3276 132.259 56.2707 132.502 55.1262C132.679 54.2835 132.687 53.4143 132.527 52.5683C132.367 51.7224 132.041 50.9163 131.569 50.1964C131.097 49.4765 130.487 48.8568 129.775 48.373C129.063 47.8891 128.262 47.5505 127.419 47.3767L102.64 42.1096C106.304 40.27 109.916 38.4807 110.524 38.2211C111.543 37.8461 112.45 37.2173 113.158 36.3942C113.866 35.5711 114.353 34.5808 114.572 33.5172C114.791 32.622 114.824 31.6915 114.669 30.7831C114.514 29.8747 114.174 29.0076 113.671 28.2355C113.168 27.4634 112.513 26.8026 111.744 26.2938C110.976 25.785 110.111 25.4392 109.204 25.2775C105.644 24.7048 91.7473 28.8702 84.0015 32.0108C72.2725 36.7596 69.3788 43.0591 69.3164 43.3527L64.9396 63.9435C64.8611 64.334 64.9113 64.7395 65.0827 65.0991C67.5747 69.3023 71.1894 72.7273 75.5208 74.9893C81.1529 78.2321 89.6228 81.1167 101.405 83.7233L112.272 86.0127ZM77.3283 71.8753C73.8366 69.9844 70.8471 67.2869 68.6084 64.0073L72.7313 44.6105C73.2009 43.7488 76.1616 39.0592 85.4493 35.3053C94.737 31.5514 106.693 28.5282 108.631 28.8381C109.045 28.9094 109.438 29.0665 109.787 29.2991C110.135 29.5318 110.432 29.8349 110.656 30.189C110.892 30.5409 111.052 30.9382 111.125 31.3554C111.198 31.7725 111.184 32.2005 111.082 32.6117C111.002 33.1352 110.779 33.6262 110.436 34.0302C110.094 34.4342 109.646 34.7353 109.143 34.9C108.181 35.2887 102.289 38.2711 98.7914 40.0029L100.99 45.4414L126.67 50.8998C127.076 50.9518 127.467 51.0873 127.818 51.298C128.169 51.5087 128.473 51.7898 128.71 52.1237C128.947 52.4576 129.112 52.837 129.195 53.238C129.278 53.6389 129.276 54.0527 129.191 54.4531C129.106 54.8536 128.939 55.2321 128.7 55.5647C128.461 55.8972 128.156 56.1767 127.804 56.3854C127.452 56.594 127.06 56.7274 126.654 56.7771C126.247 56.8267 125.835 56.7916 125.443 56.6739L103.639 52.0392L102.89 55.5624L128.335 60.9708C129.037 61.2072 129.628 61.6936 129.996 62.3375C130.363 62.9814 130.481 63.7378 130.326 64.4628C130.172 65.1879 129.757 65.831 129.16 66.2698C128.562 66.7086 127.824 66.9125 127.086 66.8427L101.387 61.3802L100.638 64.9033L121.092 69.2509C121.485 69.3006 121.863 69.4312 122.203 69.6346C122.542 69.8379 122.836 70.1096 123.066 70.4323C123.295 70.7551 123.455 71.1219 123.535 71.5096C123.615 71.8973 123.614 72.2974 123.532 72.6847C123.45 73.072 123.288 73.4379 123.057 73.7595C122.826 74.081 122.531 74.3511 122.19 74.5527C121.849 74.7542 121.47 74.8829 121.077 74.9305C120.684 74.9781 120.285 74.9436 119.906 74.8292L97.5148 70.0698L96.7659 73.5929L114.186 77.2956C114.823 77.49 115.364 77.9161 115.702 78.4898C116.04 79.0635 116.151 79.7431 116.012 80.3944C115.874 81.0458 115.496 81.6216 114.954 82.0082C114.412 82.3947 113.744 82.564 113.083 82.4825L102.22 80.1735C90.6652 77.656 82.6247 74.9649 77.3283 71.8753V71.8753Z" fill="white"/>
+<line x1="71.4889" y1="40.2626" x2="64.5964" y2="64.9883" stroke="white" stroke-width="6"/>
+<line x1="69.0553" y1="39.7504" x2="62.1628" y2="64.476" stroke="white" stroke-width="6"/>
+<line x1="65.009" y1="38.8822" x2="58.1164" y2="63.6079" stroke="white" stroke-width="6"/>
+<line x1="62.5754" y1="38.3642" x2="55.6828" y2="63.0898" stroke="white" stroke-width="6"/>
+<line x1="75.5358" y1="41.1234" x2="68.4071" y2="66.6965" stroke="white" stroke-width="6"/>
+<line x1="79.633" y1="37.7631" x2="70.9618" y2="68.8696" stroke="white" stroke-width="6"/>
+<line x1="88.5451" y1="39.6547" x2="78.5398" y2="75.5468" stroke="white" stroke-width="6"/>
+<line x1="87.0998" y1="38.4979" x2="77.5392" y2="72.7948" stroke="white" stroke-width="6"/>
+<line x1="83.7394" y1="34.4027" x2="73.2895" y2="71.89" stroke="white" stroke-width="6"/>
+<line x1="90.9767" y1="40.1732" x2="81.4161" y2="74.4701" stroke="white" stroke-width="6"/>
+<line x1="99.7106" y1="42.8715" x2="89.9277" y2="77.966" stroke="white" stroke-width="6"/>
+<line x1="97.1091" y1="43.1732" x2="87.7708" y2="76.6725" stroke="white" stroke-width="6"/>
+<line x1="94.214" y1="40.8598" x2="84.2088" y2="76.7518" stroke="white" stroke-width="6"/>
+<path d="M58.1318 36.8965C55.4395 43.5575 51.9783 49.7501 50.1373 56.6758C49.1463 60.4036 46.8375 63.2771 39.3844 61.6929C35.659 60.9011 35.1281 59.9102 33.6809 57.6168C31.0483 53.4449 28.224 48.9004 28.3677 44.7697C28.4024 43.7703 27.5939 37.8506 25.4588 37.2543C22.3483 36.3857 18.2851 35.5415 15.763 36.506C13.8269 37.2464 12.5169 38.3166 10.9973 39.3115C9.69727 40.1625 7.26148 40.4131 6.39175 41.3634" stroke="white" stroke-width="6" stroke-miterlimit="1.55572"/>
+<line x1="101.515" y1="44.3528" x2="82.1712" y2="34.9032" stroke="white" stroke-width="6"/>
+<line x1="71.4399" y1="56.1489" x2="52.5084" y2="51.6519" stroke="white" stroke-width="32"/>
+</svg>
+ </div> 
+ 
+<br><br>
+ 
+
+<p><b>Written By:</b><br>Rahil H.</p>
+
+<p><b>Shirt Design:</b><br>Rahil H.</p>
+
+<p><b>Director of Photography:</b><br>Rahil H.</p>
+
+<p><b>Photography:</b><br>Rahil H., Neel Sagar, Ronit Bainipal</p>
+
+<p><b>Those Who Inspired:</b><br>Dave Chenell, Tom Strekowski, Neel Sagar
+
+<p><b>Special Thanks:</b><br>Vishal Uchil (For literally lending his hand), <br>Jaimeen Fumakiya (For hearing my ideas when they were at the infancy stage),
+<br>You, dear reader. Thank you or your time and giving this story a read.
+</p>
+
+<p><b>The Beauty of Closure.</b><br>
+Finishing one chapter should only excite you to write the next one.<br>
+And so it continues...
+<br>
+<br>
+In time I shall return with another set of stories; and if our bond is strong enough, I know you will be around to receive them.
+</p>
+
+<p>- Rahil H. / Rahil Static </p>
+
+ 
+
+
+
+
+
+
+
+<hr class="dashed">
+<br>
+<br>
+
+<center>
+				  <p>&#169; Rahil H. / Rahil Static 2022 <br>
+					  <a class="backlink backline-animation" href="https://rahilhstatic.github.io/selected_works.html" >&larr; Other Works</a>&nbsp; | &nbsp;<a class="backlink backline-animation" href="https://rahilcity.webflow.io" target="_blank" >Rahil City &rarr;</a> </p>
+				</center>
+
+				<br>
+				<br>
+				<br>
 
 
 
