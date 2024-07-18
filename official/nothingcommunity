@@ -1,0 +1,493 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+			
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+          
+            <title>Rahil H. | Nothing Community Contributions </title>
+			<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+			<meta name = "Description" content ="Rahil explains the work done for Nothing, a tech company based in London."> 
+			<meta charset="UTF-8">
+			<meta name = "keywords" content = "Rahil, Hussain, Designer, Static, UI, UX, Nothing">
+			<meta name = "author" content = "Rahil Hussain">
+			 <!-- Chrome, Firefox OS and Opera --> 
+			<meta name="theme-color" content="#000000"> 
+			<!-- Windows Phone --> 
+			<meta name="msapplication-navbutton-color" 
+			content="#000000"> 
+			<!-- iOS Safari --> 
+			<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+			<link rel="stylesheet" type="text/css" href="https://rahilhstatic.github.io/official/projects.css" />
+			 
+			<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+			<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+			
+			
+            <style>
+						/* width */
+			::-webkit-scrollbar {
+			  width: 10px;
+			}
+
+			/* Track */
+			::-webkit-scrollbar-track {
+			  border-radius: 10px;
+			}
+			 
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+			  background: #002F6C; 
+			  border-radius: 10px;
+			}
+			
+			main::before{
+			opacity: 0.2;
+			}
+			body{
+			background-color: #f4f4f2;
+			}
+			
+			hr.dashed {
+			  border-top: 2px solid #101010;
+			}
+			
+			
+			
+			p,ol{
+			color: #101010;
+			font-weight: 400;
+			}
+			
+			h1,h2,h3,h4,h5{
+			color: #101010;
+			font-weight: 500;
+			line-height:40px;
+			}
+			
+			.links {
+						
+						font-size:16px;
+						letter-spacing: 0px;
+						user-select: none;
+						color:#002F6C;
+					}
+					
+				a{
+						text-decoration:none;
+				}
+				
+				.links:hover{
+						color:#002F6C;
+				}
+				
+				.underline-animation {
+				  display: inline-block;
+				  position: relative;
+				}
+
+				.underline-animation:after {
+				  content: '';
+				  position: absolute;
+				  width: 100%;
+				  transform: scaleX(0);
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #002F6C;
+				  transform-origin: bottom right;
+				  transition: transform 0.25s ease-out;
+				}
+
+				.underline-animation:hover:after {
+				  transform: scaleX(1);
+				  transform-origin: bottom left;
+				}
+				
+				.backlink {
+						
+						font-size:16px;
+						letter-spacing: 0px;
+						user-select: none;
+						color:#FFF1F1;
+						font-weight: 400;
+					}
+					
+				
+				.backlink:hover{
+						color:#FFF1F1;
+				}
+				
+				.backline-animation {
+				  display: inline-block;
+				  position: relative;
+				}
+
+				.backline-animation:after {
+				  content: '';
+				  position: absolute;
+				  width: 100%;
+				  transform: scaleX(0);
+				  height: 2px;
+				  bottom: 0;
+				  left: 0;
+				  background-color: #FFF1F1;
+				  transform-origin: bottom right;
+				  transition: transform 0.25s ease-out;
+				}
+
+				.backline-animation:hover:after {
+				  transform: scaleX(1);
+				  transform-origin: bottom left;
+				}
+				
+				
+			.scroll {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #101010;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	}
+	
+	.scroll::before {
+		content: '';
+		position: absolute;
+		top: 7.5px;
+		left: 9px;
+		width: 9px;
+		height: 9px;
+		border-left: 2px solid #101010;
+  	border-bottom: 2px solid #101010;
+		transform: rotate(-45deg);
+	}
+
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+img.rounded{
+  border-radius:1vw;
+  object-fit: cover;
+}
+
+img.border{
+  border-radius:1vw;
+
+}
+
+video.rounded{
+  border-radius: 1vw;
+}
+
+.credbox {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  border: 4px solid white;
+  text-align:center
+}
+#upbtn {
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #002F6C;
+  background-color: #002F6C;
+  color: #F2F2F4;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+#back{
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #EB0008;
+  color: #F2F2F4;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#upbtn:hover {
+  background-color: #011837;
+}
+
+#back:hover {
+  background-color: #a70308;
+}
+
+
+			
+			</style>
+           
+</head>
+
+<body onload="document.body.style.opacity='1'">
+ <main>
+ 
+ <button onclick="topFunction()" id="upbtn" title="Go to top">&uarr;</button>
+<a href="https://rahilhstatic.github.io/selected_works.html"> <button id="back" title="Home"> &larr;</button></a>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("upbtn");
+let backbutton = document.getElementById("back");
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+	backbutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+	backbutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+ 
+ 
+ <center>
+ <img src="ncover1.png" width="100%" class="rounded" alt="Nothing Community Contributions";>
+ </center>
+<div class="bcontain">
+
+<br> 
+<h1 style="text-align:center";>
+  Nothing Community Contributions <p style="font-size:16px; font-weight:400;"> 2024</p>
+</h1>
+<center>
+<a href="#Start"><div class="scroll"></div></a>
+</center>
+<br>
+<br>
+<br id="Start">
+<p><a href="#synopsis" class="links underline-animation">Synopsis</a></p>
+<p><a href="#s1" class="links underline-animation">Stage 1: Hardware Design</a></p>
+<p><a href="#s2" class="links underline-animation">Stage 2: Wallpaper Designs</a></p>
+<p><a href="#s3" class="links underline-animation">Stage 3: Packaging Design</a></p>
+<p><a href="#s4" class="links underline-animation">Stage 4: Marketing Campaign / Creative Treatment</a></p>
+<p><a href="#emma" class="links underline-animation">Nothing Community App</a></p>
+<br>
+<hr class="dashed">
+<br>
+
+<h2 id="synopsis"> Synopsis </h2>
+<p> Nothing is a London based tech company which focuses on making design and software centric products. In the year 2024, I participated in a series of 
+competitions for the brand in which I designed an alternate version of their existing phone, a set of four wallpapers that would come 
+pre-installed on it, the packaging box of the product and also directed the marketing campaign of said product.</br></br>
+I shared my submissions on nothing.tech and nothing.community, the latter of which is the brand's official forum where other community members share 
+their ideas as well. I noticed that it doesn't have an official app and so I decided to create a concept for that too. All of that has been documented here,
+if I make more such contributions I shall append them here.
+</p>
+
+<br> 
+<hr class="dashed">
+<br>
+
+<h2 id="s1"> Stage 1 : Hardware Design </h2>
+<p> RETRO. FUTURE.<br>
+The entire design story behind this concept is that it pays homage to the past while belonging to the future. A truly timeless piece.
+Phones today have limited shelf life specifications-wise, but design wise they can look like they belong to any era.
+<br>
+<br>
+FRESH EYES. FRESH FOREVER.
+<br>
+Good design is meant to be timeless and to achieve that - is the intention here.
+</p>
+<br> 
+
+<img src="nothing/stage1_1.png"  width="100%"  alt="Stage 1 - Hardware Design Cover";>
+<br>
+<br>
+<img src="nothing/stage1_2.png"  width="100%"  alt="Stage 1 - Fresh Eyes. Fresh Forever.";>
+<br>
+<br>
+<img src="nothing/stage1_3.png"  width="100%"  alt="Stage 1 - Details Everywhere.";>
+<br>
+<br>
+<img src="nothing/stage1_4.png"  width="100%"  alt="Stage 1 - Retro. Future.";>
+
+<br>
+<br>
+<br> 
+<hr class="dashed">
+<br>
+
+<h2 id="s2"> Stage 2 : Wallpaper Designs  </h2>
+<p> EVERGREEN COLLECTION.<br>
+I curated a set of four wallpapers. These were pictures clicked from a camera and then edited in post. The full story behind them is explained 
+in the short video I made.
+</p>
+<br> 
+
+<img src="nothing/stage2.png" width="100%" alt="Wallpaper Designs - Evergreen Collection";>
+
+<br>
+<br>
+
+<video width="100%" height="auto" class="rounded" controls>
+  <source src="presentations2.mp4" type="video/mp4">
+</video>
+
+<br>
+<br>
+<br>  
+<hr class="dashed">
+<br>
+
+<h2 id="s3"> Stage 3 : Packaging Design </h2>
+<p> PHOSPHORESCENT TWO-FACE.<br>
+Inspired by the iconic batman villain.
+Combining elements of all previous stage winners (hardware & wallpaper), the box design is meant to effectively convey the product it contains while remaining 
+eye-catching to the viewer. Seamlessly integrated with the winning hardware design and subtly layered with elements of the winning 
+wallpapers a cohesive unboxing experience is achieved. (Also filled with tiny creative Easter eggs for enthusiasts)
+</p>
+<br>
+
+<img src="nothing/stage3_1.png"  width="100%"  alt="Stage 3 - Summary";>
+<br>
+<br>
+<img src="nothing/stage3_2.png"  width="100%"  alt="Stage 3 - Components";>
+<br>
+<br>
+<img src="nothing/stage3_3.png"  width="100%"  alt="Stage 3 - Full Outer Sleeve Overview";>
+<br>
+<br>
+<img src="nothing/stage3_4.png"  width="100%"  alt="Stage 3 - Inspiration Board";>
+<br>
+<br>
+<img src="nothing/stage3_5.png"  width="100%"  alt="Stage 3 - Suggestions & Final Word";>
+
+<br>
+<br>
+<br> 
+<hr class="dashed">
+<br> 
+
+<h2 id="s4"> Stage 4: Marketing Campaign / Creative Treatment </h2>
+<p> The competition for this is still underway and I am currently working on the same. Check back around the first or second week of August for an update.
+</p>
+<br>
+
+<hr class="dashed">
+<br>
+
+<h2 id="emma"> Nothing Community App </h2>
+<p> Something I have seen a lot of people on the forum request for is the community app. So here is my concept for the same. 
+For the first iteration (a set of four major screens) I have named them as version 1.0 - codenamed “Emma”. 
+Further iterations will see changes/additions to these base four designs. As a result these are the foundations for this project.
+</p>
+<br> 
+
+<img src="nothing/communityapp_1.png"  width="100%"  alt="Community App - Overview";>
+<br>
+<br>
+<p>The app will comprise of “Home”, “Feed”, “Notifications”, “Profile” - as main items of navigation. 
+Care has been taken to make sure all elements of the community forum are accommodated in these four.</p>
+<br>
+<img src="nothing/communityapp_2.png"  width="100%"  alt="Community App - Spotlight/Home Page";>
+<br>
+<br>
+<p>I have taken close inspiration from the aesthetics of the Nothing X and the Nothing Weather app so as to create a cohesive app ecosystem. The homepage contains quick links to respective tags in the forum. 
+These 4 tags are of the utmost importance on the forum and the most visited, others can be accessed from the forum page.</p>
+<br>
+<img src="nothing/communityapp_3.png"  width="100%"  alt="Community App - Forum Page";>
+<br>
+<br>
+<p>This is the news-feed,the actual heart of the forum. I have taken great care and noted all the little details that goes into making these type of feeds. Note how the posts that you are yet to read have a solid-fill comment icon and the ones that you have already read simply have an outline. 
+Tags can be accessed</p>
+<br>
+<img src="nothing/communityapp_4.png"  width="100%"  alt="Community App - Notifications";>
+<br>
+<br>
+<p>Some people might be against the idea of dedicating an entire section of the app to notifications. I debated against it too. But the heart and soul of the community app is obviously the community that interacts with one another. So a dedicated page is not only justified but also a need. 
+Again a lot of care has been taken to make sure everything is communicated to the user without over complicating things.</p>
+<br>
+<br>
+<img src="nothing/communityapp_5.png"  width="100%"  alt="Community App - Profile Page";>
+<br>
+<br>
+<p>Finally the profile page. Meant to be a spot for the user to easily see all their posts, mentions, likes and discussions. 
+The settings icon on top will open the profile settings. (I will elaborate on those screens in V2.0) You also have the logout button here.
+<br>
+<br>
+My concept of the app was quite well received by the community members and the community manager even highlighted how my spotlight page needs to be an official addition.
+<br><br>
+These are just some foundational concepts, I am working on a full app flow from login to all of the internal meta stages. It is expected to take some time, so watch this space.
+</p>
+<br>
+
+<hr class="dashed">
+<br>
+
+<p style="font-size:14px;" > Note : NOTHING's logo, its font, the actual phone design of 2a and certain promotional photos are all properties of NOTHING. I simply retain a license to showcase my work.</p>
+
+<br>
+<br>
+
+
+
+</div>
+</main>
+</body>
+
+<footer>
+<center>
+<p>&copy; Rahil H. / Rahil Static 2022 - <script>document.write(new Date().getFullYear())</script></p>
+</center>
+</footer>
+
+
+</html>
