@@ -271,7 +271,28 @@
   border: 4px solid white;
   text-align:center
 }
+		    
 #upbtn {
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #1D191A;
+  color: white;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+#back {
   transition: opacity 3s;
   opacity: 100%;	
   display: none;
@@ -294,6 +315,11 @@
 #upbtn:hover {
   background-color: #555;
 }
+
+#back:hover {
+  background-color: #555;
+}
+		    
 </style>
 </head>
 
@@ -303,10 +329,13 @@
  
 
 <button onclick="topFunction()" id="upbtn" title="Go to top">&uarr;</button>
+<a href="https://rahilhstatic.github.io/selected_works.html"> <button id="back" title="Home"> &larr;</button></a>
 
 <script>
 // Get the button
 let mybutton = document.getElementById("upbtn");
+let backbutton = document.getElementById("back");
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -314,8 +343,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
+	backbutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
+	backbutton.style.display = "none";
   }
 }
 
@@ -554,8 +585,8 @@ In time I shall return with another set of stories; and if our bond is strong en
 <br>
 
 <center>
-				  <p>&#169; Rahil H. / Rahil Static 2022 <br>
-					  <a class="backlink backline-animation" href="https://rahilhstatic.github.io/selected_works.html" >&larr; Other Works</a>&nbsp; | &nbsp;<a class="backlink backline-animation" href="https://rahilcity.webflow.io" target="_blank" >Rahil City &rarr;</a> </p>
+				  <p>&copy; Rahil H. / Rahil Static 2022 - <script>document.write(new Date().getFullYear())</script></p>
+				<a class="backlink backline-animation" href="https://rahilcity.webflow.io" target="_blank" >Rahil City &rarr;</a> </p>
 				</center>
 
 				<br>
