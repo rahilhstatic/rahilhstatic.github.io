@@ -165,12 +165,88 @@
 	}
 }
 
+#upbtn {
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #000000;
+  color: #E4D05B;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+#back{
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #000000;
+  color: #E4D05B;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#upbtn:hover {
+  background-color: #161616;
+}
+
+#back:hover {
+  background-color: #161616;
+}		    
 			</style>
            
 </head>
 
 <body onload="document.body.style.opacity='1'">
  <main>
+
+<button onclick="topFunction()" id="upbtn" title="Go to top">&uarr;</button>
+<a href="https://rahilhstatic.github.io/selected_works.html"> <button id="back" title="Home"> &larr;</button></a>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("upbtn");
+let backbutton = document.getElementById("back");
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+	backbutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+	backbutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>	
+	 
 <div class="bcontain">
 
 <img src="where/witwirposter.jpg"  width="100%" alt="Content Header For 'Where In The World Is Rahil ?'";>
