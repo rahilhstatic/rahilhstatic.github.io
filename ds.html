@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Fonts: Cabin -->
+  <link rel="preload" href="font/cabin.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design Systems - UI components, styles, and guidelines.</title>
+  <meta name="description" content="Showcasing snippets of UI components, styles, and guidelines from the design systems I have built." />
+  
+   <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="preview/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="preview/favicon-16x16.png">
+
+<!-- Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="preview/apple-touch-icon.png">
+
+<!-- Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="preview/icon-192.png">
+  
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Design Systems - UI components, styles, and guidelines.">
+<meta property="og:description" content="Showcasing snippets of UI components, styles, and guidelines from the design systems I have built.">
+<meta property="og:image" content="https://rahilhstatic.github.io/preview/previewmain.png">
+<meta property="og:url" content="https://rahilhstatic.github.io">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Design Systems - UI components, styles, and guidelines.">
+<meta name="twitter:description" content="Showcasing snippets of UI components, styles, and guidelines from the design systems I have built.">
+<meta name="twitter:image" content="https://rahilhstatic.github.io/preview/previewmain.png">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <!-- NAV WITH dark mode toggle -->
+ <nav id="glass-nav">
+  <!-- Home Button -->
+    <a href="index.html" title="Home"
+     style="display: flex; align-items: center; justify-content: center;">
+   <button id="home-btn" title="Home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+       viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11L12 4l9 7"/>
+    <path d="M5 11v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V11"/>
+  </svg>
+  </button>
+  </a>
+
+  <!-- Separator -->
+  <div class="nav-separator"></div>
+
+  <!-- Email Link -->
+  <a href="mailto:emailrahilcity@gmail.com" title="Email"
+     style="display: flex; align-items: center; justify-content: center;">
+  <button id="email-btn" title="Email">
+    <!-- Email Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M22 6 12 13 2 6"/>
+    </svg>
+  </button>
+  </a>
+</nav>
+  
+
+  <main class="page-content">
+  <section class="imgspace">
+  <a href="index.html">← Back To Home</a>
+  </section>
+
+<br><br>
+
+    <h1>Design Systems</h1>
+    <p>The following are some snippets of UI components, styles and guidelines taken from the various design systems I have built.</p>
+
+    <h2>My Role</h2>
+    <p>I have led the creation and maintenance of various scalable design systems in Figma ever since my first major project. 
+	I collaborated with developers on this, as these design guides ultimately form a crucial part of the developer handoff.</p>
+
+    <h2>Process & Approach</h2>
+    <p>Depending on the project and time available, I either start with a design guide or create one early on after designing the base visual elements. 
+	Small-scale, one-off projects don’t always require a full design system, but having reusable components within the file helps simplify future changes.</p>
+
+    <h2>Results</h2>
+    <p>Creating design systems helps maintain consistency and improves efficiency. It also plays an important role in bridging the gap between concept and reality, bringing the product once step closer to launch.</p>
+	
+<section class="showcase">
+<h3>Gallery</h3>
+<div class="image-row">
+  <img src="projects/ds/ds1.png" alt="Design Systems">
+  <img src="projects/ds/ds2.png" alt="Colors & Tokens">
+</div>
+<div class="image-row">
+  <img src="projects/ds/ds3.png" alt="Geist - Typography">
+  <img src="projects/ds/ds4.png" alt="Button States">
+</div>
+<div class="image-row">
+  <img src="projects/ds/ds5.png" alt="Progress Bar States">
+  <img src="projects/ds/ds6.png" alt="Card States">
+</div>
+<div class="image-row">
+  <img src="projects/ds/ds7.png" alt="Input States">
+  <img src="projects/ds/ds8.png" alt="Gradient Styles">
+</div>
+<div class="image-row">
+  <img src="projects/ds/ds9.png" alt="Sequential Colors">
+  <img src="projects/ds/ds10.png" alt="Responsive Corner Radius">
+</div>
+
+</section>
+   
+   <section class="space2">
+  <h2>Other Works</h2>
+ <p><ul>
+ <li><a href="nothing.html">Nothing</a> - software experiences for Nothing phones.</li>
+ <li><a href="workin.html">WorkIn</a> - a multi-sided B2B2C platform.</li>
+ <li><a href="nextcampus.html">NextCampus</a> - an ERP solution for colleges.</li>
+</section>
+	
+	 <footer>
+  <div class="footer-left">
+    © <span id="year"></span> | Rahil H. 
+  </div>
+  <div class="footer-right">
+    All rights reserved.
+  </div>
+</footer>
+
+  </main>
+  <div id="imageModal" class="modal">
+  <img class="modal-content" id="modalImage">
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
