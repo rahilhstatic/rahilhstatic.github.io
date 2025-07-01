@@ -297,7 +297,7 @@ footer {
 }
 
 .page-content {
-  padding-bottom: 0px; /* enough to prevent nav from overlapping footer */
+  padding-bottom: 24px; /* enough to prevent nav from overlapping footer */
 }
 
 @media (max-width: 480px) {
