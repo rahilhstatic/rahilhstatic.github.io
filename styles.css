@@ -10,6 +10,10 @@
   --button-shadow-light: rgba(0, 0, 0, 0.08);
 }
 
+html {
+  font-size: clamp(16px, 100%, 18px);
+}
+
 
 @font-face {
   font-family: 'Cabin';
