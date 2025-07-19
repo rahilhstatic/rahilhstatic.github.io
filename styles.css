@@ -27,7 +27,7 @@ html {
 /* Reduce base font size slightly on phones */
 @media (max-width: 480px) {
   html {
-    font-size: 15.2px;
+    font-size: 15.5px;
   }
 }
 
