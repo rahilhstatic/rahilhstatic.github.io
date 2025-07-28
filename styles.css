@@ -494,3 +494,27 @@ li {
   right: 1.5rem;
 }
 
+.banner-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+	display: block; 
+	border-radius: 6px;
+}
+
+.banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    border-radius: 6px;
+}
+
+.banner-image.active {
+    opacity: 1;
+}
+
+.banner-image:first-child {
+    position: relative; /* First image sets the container height */
+}
