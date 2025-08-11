@@ -13,20 +13,20 @@
 @font-face {
   font-family: 'Cabin';
   src: url('font/cabin.ttf') format('truetype');
-  font-weight: 400 700; /* Tell the browser this is a variable font */
+  font-weight: 400 700; /* variable font */
   font-style: normal;
   font-display: swap;
 }
 
 html {
   font-size: 16px;
-  -webkit-text-size-adjust: 100%; /* Prevent font scaling in Safari/iOS */
+  -webkit-text-size-adjust: 100%; /* font scaling in Safari/iOS- this is a big issue, safari optimization is insane, too much work */
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reduce base font size slightly on phones */
+/* responsive */
 @media (max-width: 480px) {
   html {
     font-size: 15.5px;
@@ -50,15 +50,15 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Reset system font weight overrides and normalize */
+/* Reset */
 body, h1, h2, h3, h4, h5, h6, p, li, a, span, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Explicitly set header weights to avoid iOS bolding */
+/* iOS bolding solve */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 650; /* Adjust if you want lighter */
+  font-weight: 650; /* Adjust */
 }
 
 main {
@@ -95,7 +95,8 @@ h4 {
 p {
   line-height: 1.6;
   font-size: 1.02rem;
-  margin-top: 0.2rem; /* Reduced margin-top */
+	 max-width: 62ch;
+  margin-top: 0.2rem; /* might need to adjust */
 }
 
 
@@ -518,3 +519,4 @@ li {
 .banner-image:first-child {
     position: relative; /* First image sets the container height */
 }
+
