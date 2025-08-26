@@ -46,7 +46,7 @@ body {
   background-color: var(--bg-light);
   color: var(--text-light);
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -519,4 +519,5 @@ li {
 .banner-image:first-child {
     position: relative; /* First image sets the container height */
 }
+
 
