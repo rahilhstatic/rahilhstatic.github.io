@@ -228,6 +228,39 @@ footer {
   }
 }
 
+.tags {
+            display: flex;
+            gap: 8px;
+        }
+
+        .tag {
+            color: var(--accent);
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.90rem;
+            font-weight: 500;
+			border: 1px solid #d1d5db;
+        }
+
+        .arrow {
+            width: 24px;
+            height: 24px;
+            background: #f3f4f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s;
+			border: 1px solid #d1d5db;
+        }
+
+       
+        .arrow svg {
+            width: 18px;
+            height: 18px;
+        }
+
 /* -------- Glass Navigation Bar -------- */
 #glass-nav {
   position: fixed;
@@ -519,5 +552,6 @@ li {
 .banner-image:first-child {
     position: relative; /* First image sets the container height */
 }
+
 
 
