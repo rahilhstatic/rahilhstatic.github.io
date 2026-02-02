@@ -179,6 +179,10 @@ footer {
   margin-top: 2rem;
 }
 
+.para2 {
+	margin-top: 1rem;
+}
+
 .contact a,
 .space a,
 .space2 a {
@@ -552,6 +556,7 @@ li {
 .banner-image:first-child {
     position: relative; /* First image sets the container height */
 }
+
 
 
 
