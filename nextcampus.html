@@ -89,20 +89,33 @@
 	Working as the sole designer in a fast-paced startup environment, I handled everything from user flows to high-fidelity UIs. 
 	As the complexity increased in year 2, another designer helped me with user personas and research. </p>
 
-     <h2>Challenges</h2>
+    <h2>Challenges</h2>
     <p>Lot of existing ERP systems in the market meant that NextCampus had to be different. It aims to cater to many different users.
     From admins, teachers and students to staff members and invigilators for exams. 
-    All this meant a complex app where it was crucial to understand each role and their requirements. 
-    On top of that our target audience was not technologically oriented, so the product must be made with that in mind.</p>
+    All this meant a complex app where it was crucial to understand each role and their unique requirements.
+    On top of that the college staff was not heavily technologically oriented, so the product must be made with that in mind.</p>
+	<p class="para2">Balancing complexity with usability hence became the primary challenge as the goal became to make the UI fit between this space of 
+	visual simplicity, yet back-end criticality. Handling returning students posed another design problem, particularly the issue of 
+	data retention and re-submission of information on failure at the cost of skipping necessary verification.</p>
 	  
     <h2>Process & Approach</h2>
     <p>Collaborated with stakeholders to understand workflows and pain points, then translated them into clear user flows and wireframes. 
 	Built high-fidelity UIs and interactive prototypes, iterating based on feedback from all the different user types. 
 	Tested multiple builds with real users to ensure that the product was easy to understand, navigate and use.</p>
+	
+	<p class="para2"><b>Key Design Decisions:-</b></p>
+	<p><b>Proper Architectural Mapping:</b> First I mapped the entire system to visualize how each user's specific layer communicates with another. I have documented these in the foundation section, these diagrams were also useful for stakeholder presentation to communicate the project scope. </p>
+	<p><b>User Role Ecosystem:</b> Designed a permissions and control layer handled by the admins (called Campus Control) as they managed the visibility and structure of application forms. 
+	They also were able to setup semester details and yearly calendar for teachers, who had read-only access to their own data. The aim was to create cross-role collaboration while
+	upholding the integrity of the system.</p>
+	<p class="para2"><b>Optimized Admission Rollover Flow:</b> Returning students applying for next year (or different programs) only had to enter details specific to a form, redundant information
+    was pre-filled by using data collected during previous submission.</p>
+	<p class="para2"><b>Role Specific UX: </b> Given the less technical nature of certain members, interfaces and experiences were designed based on roles. 
+	Tech-oriented admins handled the messier side, while students, teachers and other staff saw simplified views that concentrated focus on only their respective tasks.</p>
 
     <h2>Results</h2>
     <p>The ERP system helped reduce manual processes, simplified exam and payroll management, and improved transparency across departments. It improved efficiency by more than 50%, as half of the records were documented using pen and paper, which made it difficult to search through when needed. 
-	It’s currently in active in a few colleges in India being used by 1000+ students & 150+ staff members annually and has received positive feedback for its clarity and ease of use. 
+	It’s currently active in a few colleges in India being used by 1000+ students & 150+ staff members annually and has received positive feedback for its clarity and ease of use. 
 	The product also generated significant revenue numbers as the parent company was able to expand their branches across the city.</p>
 	
 					
@@ -176,6 +189,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
