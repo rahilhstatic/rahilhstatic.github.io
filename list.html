@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Fonts: Cabin -->
+  <link rel="preload" href="font/cabin.ttf" as="font" type="font/ttf" crossorigin="anonymous" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahil H. Static - All Work</title>
+  <meta name="description" content="Index - All Projects Made By Rahil H. Static" />
+  
+   <!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="preview/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="preview/favicon-16x16.png">
+
+<!-- Apple -->
+<link rel="apple-touch-icon" sizes="180x180" href="preview/apple-touch-icon.png">
+
+<!-- Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="preview/icon-192.png">
+  
+ <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Rahil H. Static - All Work">
+<meta property="og:description" content="Index - All Projects Made By Rahil H. Static">
+<meta property="og:image" content="https://rahilhstatic.github.io/preview/previewindex.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:url" content="https://rahilhstatic.github.io">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rahil H. Static - All Work">	
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rahil H. Static - All Work">
+<meta name="twitter:description" content="Index - All Projects Made By Rahil H. Static">
+<meta name="twitter:image" content="https://rahilhstatic.github.io/preview/previewindex.png">
+
+<!-- Additional -->
+<meta property="og:image:alt" content="Preview image card for Rahil H. Static's Portfolio Website">
+<meta name="twitter:image:alt" content="Preview image card for Rahil H. Static's Portfolio Website">
+  
+  <link rel="stylesheet" href="styles.css" />
+  
+ <style>
+:root {
+    --ink:        #1a1714;
+    --ink-mid:    #6b6560;
+    --ink-faint:  #b8b2a8;
+    --rule:       #ddd8ce;
+    --hover-bg:   #f0f0f0;
+  } 
+  
+  .hero {
+    opacity: 0;
+    animation: up 0.4s ease 0.05s forwards;
+  }
+ 
+/* List */
+  .work-list {  margin: 0;
+  padding: 0;
+  list-style: none; }
+  
+
+  /* Active items */
+  .work-item.active a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 3px;
+    transition: background 0.12s ease;
+  }
+
+  .work-item.active a:hover {
+    background: var(--hover-bg);
+  }
+
+  .work-item.active a:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Inactive items */
+  .work-item.inactive .row-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Shared inner elements */
+  .idx {
+    letter-spacing: 0.05em;
+    width: 20px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .active .idx       { color: var(--ink-faint); }
+  .inactive .idx     { color: var(--rule); }
+
+  .item-body {
+    flex: 1;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .item-name {
+    font-weight: 500;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+  }
+
+  .item-cat {
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .active .item-name   { color: var(--ink); }
+  .active .item-cat    { color: var(--ink-mid); }
+  .inactive .item-name { color: var(--ink-faint); font-weight: 400; }
+  .inactive .item-cat  { color: var(--rule); }
+
+  .arrow {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-left: auto;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 0.14s ease, transform 0.14s ease;
+  }
+
+  .nda {
+    color: var(--ink-faint);
+    border: 1px solid var(--rule);
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-left: auto;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+
+  /* Stagger in */
+  @keyframes up {
+    from { opacity: 0; transform: translateY(7px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .work-item {
+    opacity: 0;
+    animation: up 0.32s ease forwards;
+  }
+
+  .work-item:nth-child(1)  { animation-delay: 0.10s }
+  .work-item:nth-child(2)  { animation-delay: 0.13s }
+  .work-item:nth-child(3)  { animation-delay: 0.16s }
+  .work-item:nth-child(4)  { animation-delay: 0.19s }
+  .work-item:nth-child(5)  { animation-delay: 0.22s }
+  .work-item:nth-child(6)  { animation-delay: 0.25s }
+  .work-item:nth-child(7)  { animation-delay: 0.28s }
+  .work-item:nth-child(8)  { animation-delay: 0.31s }
+  .work-item:nth-child(9)  { animation-delay: 0.34s }
+  .work-item:nth-child(10) { animation-delay: 0.37s }
+  .work-item:nth-child(11) { animation-delay: 0.40s }
+  .work-item:nth-child(12) { animation-delay: 0.43s }
+  .work-item:nth-child(13) { animation-delay: 0.46s }
+  .work-item:nth-child(14) { animation-delay: 0.49s }
+  .work-item:nth-child(15) { animation-delay: 0.52s }
+  .work-item:nth-child(16) { animation-delay: 0.55s }
+  .work-item:nth-child(17) { animation-delay: 0.58s }
+  .work-item:nth-child(18) { animation-delay: 0.61s }
+  .work-item:nth-child(19) { animation-delay: 0.64s }
+</style>
+ 
+</head>
+<body>
+  
+  <!-- NAV WITH dark mode toggle -->
+ <nav id="glass-nav">
+  <!-- Home Button -->
+    <a href="index.html" title="Home"
+     style="display: flex; align-items: center; justify-content: center;">
+   <button id="home-btn" title="Home">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+       viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11L12 4l9 7"/>
+    <path d="M5 11v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V11"/>
+  </svg>
+  </button>
+  </a>
+
+  <!-- Separator -->
+  <div class="nav-separator"></div>
+
+  <!-- Email Link -->
+  <a href="mailto:emailrahilcity@gmail.com" title="Email"
+     style="display: flex; align-items: center; justify-content: center;">
+  <button id="email-btn" title="Email">
+    <!-- Email Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M22 6 12 13 2 6"/>
+    </svg>
+  </button>
+  </a>
+</nav>
+  
+
+  <main class="page-content">
+  <section class="imgspace">
+  <a href="index.html">&larrhk; Back To Home</a>
+  </section>
+
+<br><br>
+
+<section class ="hero">
+    <h1>Index</h1>
+    <p>Documented here is a complete record of all my client and personal projects — active cases are linked, others are under NDA, still in progress or retired.
+	They are arranged from Newest to Oldest.</p>
+
+
+    <h2>Client Work</h2>
+</section>
+	
+<ul class="work-list">
+
+    <li class="work-item inactive">
+      <div class="row-inner">
+        <span class="idx">01</span>
+        <div class="item-body">
+          <span class="item-name">Stealth</span>
+          <span class="item-cat">Consumer Electronics</span>
+        </div>
+        <span class="nda">WIP</span>
+      </div>
+    </li>
+
+    <li class="work-item active">
+      <a href="cmf.html" target="_blank">
+        <span class="idx">02</span>
+        <div class="item-body">
+          <span class="item-name">CMF</span>
+          <span class="item-cat">OS (Proposal)</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="nothing.html" target="_blank">
+        <span class="idx">03</span>
+        <div class="item-body">
+          <span class="item-name">Nothing</span>
+          <span class="item-cat">Smartphone OS Experiences</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="https://anata.info/" target="_blank">
+        <span class="idx">04</span>
+        <div class="item-body">
+          <span class="item-name">Anata</span>
+          <span class="item-cat">Resume Builder</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item inactive">
+      <div class="row-inner">
+        <span class="idx">05</span>
+        <div class="item-body">
+          <span class="item-name">Stealth</span>
+          <span class="item-cat">Fleet Management</span>
+        </div>
+		<span class="nda">NDA</span>
+      </div>
+    </li>
+
+    <li class="work-item active">
+      <a href="workin.html" target="_blank">
+        <span class="idx">06</span>
+        <div class="item-body">
+          <span class="item-name">Workin</span>
+          <span class="item-cat">Recruitment Platform</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="support99.html" target="_blank">
+        <span class="idx">07</span>
+        <div class="item-body">
+          <span class="item-name">99 Support</span>
+          <span class="item-cat">Japanese Recruitment</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="https://www.nextplatforms.in/" target="_blank">
+        <span class="idx">08</span>
+        <div class="item-body">
+          <span class="item-name">NextPlatforms</span>
+          <span class="item-cat">Website</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="nextcampus.html" target="_blank">
+        <span class="idx">09</span>
+        <div class="item-body">
+          <span class="item-name">NextCampus</span>
+          <span class="item-cat">B2B ERP SaaS</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item inactive">
+      <div class="row-inner">
+        <span class="idx">10</span>
+        <div class="item-body">
+          <span class="item-name">Campus Rocket</span>
+          <span class="item-cat">Web Manager</span>
+        </div>
+      </div>
+    </li>
+	
+	<li class="work-item inactive">
+      <div class="row-inner">
+        <span class="idx">11</span>
+        <div class="item-body">
+          <span class="item-name">D.I.P</span>
+          <span class="item-cat">Management Tool</span>
+        </div>
+      </div>
+    </li>
+
+   <li class="work-item active">
+      <a href="https://www.develearn.in/" target="_blank">
+        <span class="idx">12</span>
+        <div class="item-body">
+          <span class="item-name">Develearn</span>
+          <span class="item-cat">Website</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="https://www.nfbindia.in/" target="_blank">
+        <span class="idx">13</span>
+        <div class="item-body">
+          <span class="item-name">NFB</span>
+          <span class="item-cat">Website</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+     <li class="work-item active">
+      <a href="https://patkarvardecollege.edu.in/" target="_blank">
+        <span class="idx">14</span>
+        <div class="item-body">
+          <span class="item-name">Patkar-Varde</span>
+          <span class="item-cat">Website</span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+
+     <li class="work-item inactive">
+       <div class="row-inner">
+        <span class="idx">15</span>
+        <div class="item-body">
+          <span class="item-name">GNK</span>
+          <span class="item-cat">Website</span>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  
+  <h2>Personal Projects</h2>
+</section>
+	
+<ul class="work-list">
+
+    <li class="work-item inactive">
+      <div class="row-inner">
+        <span class="idx">01</span>
+        <div class="item-body">
+          <span class="item-name">Annotate</span>
+          <span class="item-cat">Custom Design Library</span>
+        </div>
+		<span class="nda">WIP</span>
+      </div>
+    </li>
+
+    <li class="work-item active">
+      <a href="https://rahilsmuseum.github.io/" target="_blank">
+        <span class="idx">02</span>
+        <div class="item-body">
+          <span class="item-name">RMDA</span>
+          <span class="item-cat">Museum Gallery</span>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </li>
+
+    <li class="work-item active">
+      <a href="personal/static.html" target="_blank">
+        <span class="idx">03</span>
+        <div class="item-body">
+          <span class="item-name">TRSS</span>
+          <span class="item-cat">Fashion & Story </span>
+        </div>
+       <span class="arrow">→</span>
+      </a>
+    </li>
+	
+</ul>
+  
+   
+    <section class="space2">
+  <h2>Contact</h2>
+ <p>I am available for new work. Well... even if I am not, it doesn't hurt to send in a mail and check though... we could always work something out.</p>
+  <p><ul>
+ <li><a href="mailto:emailrahilcity@gmail.com"  target="_blank" rel="noopener noreferrer">emailrahilcity[at]gmail.com</a></li>
+  </ul>
+</section>
+	
+	 <footer>
+  <div class="footer-left">
+    © <span id="year"></span> | Rahil H. 
+  </div>
+  <div class="footer-right">
+    All rights reserved.
+  </div>
+</footer>
+
+  </main>
+  <div id="imageModal" class="modal">
+  <img class="modal-content" id="modalImage">
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
